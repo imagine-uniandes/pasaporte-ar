@@ -67,7 +67,7 @@
   </head>
   <body>
     <!-- Progress UI -->
-    <img id="bouncing-img" src="https://157.253.192.178:8080/seneca_corriendo.png" />
+    <img id="bouncing-img" src="seneca_corriendo.png" />
     <div id="progress-container">
       <div id="progress-text">0 / 5 detectados (0%)</div>
       <div id="progress-bar"></div>
@@ -75,18 +75,18 @@
 
     <!-- AR Scene -->
     <a-scene
-      mindar-image="imageTargetSrc: https://157.253.192.178:8080/seneca.mind; maxTrack: 5"
+      mindar-image="imageTargetSrc: seneca.mind; maxTrack: 5"
       color-space="sRGB"
       renderer="colorManagement: true, physicallyCorrectLights"
       vr-mode-ui="enabled: false"
       device-orientation-permission-ui="enabled: false"
     >
       <a-assets>
-        <a-asset-item id="seneca_controller" src="https://157.253.192.178:8080/seneca_controller_final.gltf"></a-asset-item>
-        <a-asset-item id="seneca_vr" src="https://157.253.192.178:8080/seneca_vr_final.gltf"></a-asset-item>
-        <a-asset-item id="seneca_robot" src="https://157.253.192.178:8080/seneca_robot_final.gltf"></a-asset-item>
-        <a-asset-item id="seneca_maze" src="https://157.253.192.178:8080/seneca_maze_final.gltf"></a-asset-item>
-        <a-asset-item id="seneca_pc" src="https://157.253.192.178:8080/seneca_pc_final.gltf"></a-asset-item>
+        <a-asset-item id="seneca_controller" src="seneca_controller_final.gltf"></a-asset-item>
+        <a-asset-item id="seneca_vr" src="seneca_vr_final.gltf"></a-asset-item>
+        <a-asset-item id="seneca_robot" src="seneca_robot_final.gltf"></a-asset-item>
+        <a-asset-item id="seneca_maze" src="seneca_maze_final.gltf"></a-asset-item>
+        <a-asset-item id="seneca_pc" src="seneca_pc_final.gltf"></a-asset-item>
       </a-assets>
 
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
