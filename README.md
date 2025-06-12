@@ -40,6 +40,38 @@ Los modelos 3D de Séneca utilizados en este proyecto siguieron un proceso de cr
 1.  **Servidor Web:** La carpeta completa del proyecto debe ser alojada en un servidor web. Puede ser cualquier servidor web simple (por ejemplo, usando Python `http.server`, Node.js `http-server`, o Apache/Nginx).
 2.  **HTTPS (Certificado SSL):** **Este es un requisito crítico.** La aplicación **no funcionará** si se sirve a través de HTTP. Debe ser servida a través de **HTTPS**. Esto se debe a que los navegadores modernos requieren una conexión segura (HTTPS) para permitir el acceso a la cámara del dispositivo, lo cual es esencial para la funcionalidad de AR.
 
+## Estructura del Proyecto
+
+El proyecto se organiza con los siguientes archivos y carpetas principales:
+
+*   **`index.html`**: Es el archivo principal de la aplicación web. Contiene toda la estructura HTML, los estilos CSS, y el código JavaScript necesario para la experiencia de Realidad Aumentada y la interfaz de progreso.
+*   **`README.md`**: Este archivo. Contiene la documentación del proyecto.
+*   **`seneca.mind`**: Archivo compilado por MindAR que contiene los datos de los 5 marcadores de imagen utilizados en la aplicación.
+*   **`seneca_corriendo.png`**: Imagen de Séneca utilizada en la interfaz de usuario para la barra de progreso animada.
+*   **Archivos de Modelos 3D (`.gltf`, `.bin`):**
+    *   `seneca_controller_final.gltf` y `seneca_controller_final.bin`: Modelo 3D de Séneca con un control.
+    *   `seneca_maze_final.gltf` y `seneca_maze_final.bin`: Modelo 3D de Séneca en un laberinto.
+    *   `seneca_pc_final.gltf` y `seneca_pc_final.bin`: Modelo 3D de Séneca con un computador.
+    *   `seneca_robot_final.gltf` y `seneca_robot_final.bin`: Modelo 3D de Séneca con un robot.
+    *   `seneca_vr_final.gltf` y `seneca_vr_final.bin`: Modelo 3D de Séneca con gafas de Realidad Virtual.
+    *   *Nota: Los archivos `.gltf` definen la estructura y animación del modelo, mientras que los archivos `.bin` asociados suelen contener los datos geométricos y de animación.*
+*   **Archivos de Texturas (`.png`, `.jpg`):**
+    *   `DefaultMaterial_baseColor.jpg`
+    *   `Image_0.png`
+    *   `material_baseColor.jpg`
+    *   `material_metallicRoughness.png`
+    *   `material_normal.png`
+    *   `Quest3HMD_baseColor.png`
+    *   `Quest3HMD_metallicRoughness.png`
+    *   `Quest3HMD_normal.png`
+    *   `Substance_2_lambert2_BaseColor.jpg`
+    *   `'Textura seneca.png'`
+    *   *Estos archivos son imágenes utilizadas como texturas para dar apariencia a los modelos 3D.*
+*   **Archivos de Certificado SSL (`.pem`):**
+    *   `cert.pem`: Certificado SSL público.
+    *   `key.pem`: Clave privada del certificado SSL.
+    *   *Estos archivos son necesarios para servir la aplicación a través de HTTPS, un requisito para el acceso a la cámara en navegadores modernos.*
+
 ## Estructura del Código Principal (`index.html`)
 
 *   **Cabecera (`<head>`):**
