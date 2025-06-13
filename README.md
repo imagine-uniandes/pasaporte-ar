@@ -35,6 +35,8 @@ Los modelos 3D de Séneca utilizados en este proyecto siguieron un proceso de cr
 4.  **Añadir Objetos (si es necesario):** En algunos casos, se añadieron objetos que Séneca sostiene. Este proceso se realizó en Blender, siguiendo guías como este tutorial: [Blender Tutorial - Parent Objects](https://www.youtube.com/watch?v=3jCE2Va0ChM).
 5.  **Exportación Final:** Finalmente, los modelos completos (con animaciones y objetos) se exportaron desde Blender en formato `.gltf`. Es importante especificar durante la exportación que se incluyan las texturas dentro del archivo `.gltf` para una correcta visualización.
 
+Esta es una lista de reproducción donde se puede ver a grandes rasgos el proceso de creacion de los modelos 3D y algunos errores que posiblemente pueden aparecer: https://www.youtube.com/playlist?list=PLImXQjxOmxayOGvuEOPoKsBp8XDHRM5gB
+
 ## Requisitos para Ejecutar el Proyecto
 
 1.  **Servidor Web:** La carpeta completa del proyecto debe ser alojada en un servidor web. Puede ser cualquier servidor web simple (por ejemplo, usando Python `http.server`, Node.js `http-server`, o Apache/Nginx).
